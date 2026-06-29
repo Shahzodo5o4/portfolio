@@ -23,8 +23,8 @@ const PROFILE = {
   summary:
     "Data analyst with a Computer Engineering background, turning raw data into clear, actionable insights with SQL, Python, and Tableau. Google-certified across the full analytics workflow — from data cleaning to business intelligence.",
   socials: {
-    github: "#", // ← replace with real GitHub URL
-    linkedin: "#", // ← replace with real LinkedIn URL
+    github: "https://github.com/Shahzodo5o4",
+    linkedin: "https://www.linkedin.com/in/shahzod-bahronov-812041339",
   },
 };
 
