@@ -21,7 +21,7 @@ const PROFILE = {
   email: "shahzod.bahronov05@gmail.com",
   phone: "+998 94 426 22 40",
   summary:
-    "Data analyst with a Computer Engineering background, turning raw data into clear, actionable insights with SQL, Python, and Tableau. Google-certified across the full analytics workflow — from data cleaning to business intelligence.",
+    "Data analyst with a Computer Engineering background, turning raw data into clear, actionable insights with SQL and Python. Currently an AI/ML trainee at IT Park Uzbekistan, working with machine learning, NLP, and large language models. Google-certified across the full analytics workflow.",
   socials: {
     github: "https://github.com/Shahzodo5o4",
     linkedin: "https://www.linkedin.com/in/shahzod-bahronov-812041339",
@@ -36,9 +36,9 @@ const STATS = [
 ];
 
 const SKILL_GROUPS = [
-  { icon: Database, title: "Data Analysis & BI", items: ["SQL", "Tableau", "Excel", "Google Sheets", "Pattern Recognition"] },
+  { icon: Database, title: "Data Analysis & BI", items: ["SQL (PostgreSQL, MySQL)", "Excel", "Google Sheets", "Data Science"] },
   { icon: Code2, title: "Programming", items: ["Python (pandas, NumPy)", "SQL"] },
-  { icon: Brain, title: "Machine Learning", items: ["Supervised & Unsupervised Learning", "Deep Learning basics"] },
+  { icon: Brain, title: "AI & Machine Learning", items: ["Machine Learning", "NLP", "Large Language Models (LLM)", "Deep Learning basics", "Claude Code"] },
   { icon: MapIcon, title: "Tools & Geospatial", items: ["QGIS", "Remote Sensing"] },
 ];
 
@@ -49,6 +49,15 @@ const LANGUAGES = [
 ];
 
 const PROJECTS = [
+  {
+    title: "Uzbekistan · World Cup 2026",
+    subtitle: "Statistical Match Prediction & Tournament Simulation",
+    timeline: "Jun 2026",
+    description:
+      "A Dixon–Coles (bivariate Poisson) model trained on 49,000+ international matches (1872–2026) predicts every World Cup 2026 game, a 60,000-run Monte Carlo simulation estimates each team's title chances, and interactive dashboards provide live tracking and tactical what-if analysis for Uzbekistan.",
+    tech: ["Python", "pandas", "SciPy", "Monte Carlo", "Statistical Modeling", "Dashboards"],
+    github: "https://github.com/Shahzodo5o4/uzbekistan-wc2026",
+  },
   {
     title: "AquaMonitor v2.0",
     subtitle: "Satellite-Based Water Reservoir Monitoring",
@@ -70,6 +79,14 @@ const PROJECTS = [
 // Combined, date-ordered timeline of roles and study.
 const TIMELINE = [
   {
+    kind: "experience", role: "AI/ML Trainee",
+    org: "IT Park Uzbekistan · Apprenticeship — Tashkent (On-site)", date: "Apr 2026 – Present",
+    points: [
+      "Hands-on training in machine learning, NLP, and large language models with Python",
+      "Applying data science workflows and building AI solutions using Claude Code",
+    ],
+  },
+  {
     kind: "experience", role: "Assistant Teacher — Cisco CCNA",
     org: "Quick Education Group NTM, Tashkent", date: "Jun 2025 – Jul 2025",
     points: ["Taught core principles of system and network administration", "Demonstrated configuration of real-world networking devices"],
@@ -87,6 +104,7 @@ const TIMELINE = [
 ];
 
 const CERTS = [
+  { name: "Claude Code in Action", issuer: "Anthropic · Issued Jun 2026", featured: true },
   { name: "Google Data Analytics", issuer: "Professional Certificate", featured: true },
   { name: "Google Advanced Data Analytics", issuer: "Certificate", featured: true },
   { name: "Google Business Intelligence", issuer: "Certificate", featured: true },
@@ -377,14 +395,20 @@ export default function Portfolio() {
                     <span key={t} className={`${c.chip} font-mono text-xs px-2.5 py-1 rounded-md`}>{t}</span>
                   ))}
                 </div>
-                <div className={`mt-6 pt-5 ${c.border} border-t flex gap-3`}>
-                  <a href="#" className={`flex items-center gap-1.5 text-sm font-medium ${c.muted} hover:${accent.replace("text-", "text-")} transition-colors`}>
-                    <Github size={16} /> Code
-                  </a>
-                  <a href="#" className={`flex items-center gap-1.5 text-sm font-medium ${accent}`}>
-                    <ExternalLink size={16} /> Live demo
-                  </a>
-                </div>
+                {(p.github || p.demo) && (
+                  <div className={`mt-6 pt-5 ${c.border} border-t flex gap-3`}>
+                    {p.github && (
+                      <a href={p.github} target="_blank" rel="noreferrer" className={`flex items-center gap-1.5 text-sm font-medium ${c.muted} transition-colors`}>
+                        <Github size={16} /> Code
+                      </a>
+                    )}
+                    {p.demo && (
+                      <a href={p.demo} target="_blank" rel="noreferrer" className={`flex items-center gap-1.5 text-sm font-medium ${accent}`}>
+                        <ExternalLink size={16} /> Live demo
+                      </a>
+                    )}
+                  </div>
+                )}
               </article>
             </Reveal>
           ))}
