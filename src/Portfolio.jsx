@@ -31,7 +31,7 @@ const PROFILE = {
 // Quick "at a glance" stats shown in the hero (mono = data-console feel).
 const STATS = [
   { label: "Google certs", value: "4" },
-  { label: "ML projects", value: "2" },
+  { label: "ML projects", value: "3" },
   { label: "English", value: "IELTS 6.5" },
 ];
 
@@ -49,6 +49,16 @@ const LANGUAGES = [
 ];
 
 const PROJECTS = [
+  {
+    title: "Multi-Agent AI Analyst",
+    subtitle: "Supervisor-Led Agent Team with a Critic Loop",
+    timeline: "Jul 2026",
+    description:
+      "A LangGraph supervisor routes each question to the right specialist — RAG document retrieval, web search, text-to-SQL, or sandboxed Python — then a critic verifies the draft answer before it reaches the user. Includes long-term memory, guarded SQL, a process-isolated code sandbox, RAGAS + LLM-judge evaluation over 14 questions (100% routing accuracy), and Langfuse tracing. Deployed free on Render + GitHub Pages.",
+    tech: ["Python", "LangGraph", "RAG", "Qdrant", "FastAPI", "Langfuse", "RAGAS"],
+    github: "https://github.com/Shahzodo5o4/multi-agent-ai-analyst",
+    demo: "https://shahzodo5o4.github.io/multi-agent-ai-analyst/",
+  },
   {
     title: "Uzbekistan · World Cup 2026",
     subtitle: "Statistical Match Prediction & Tournament Simulation",
