@@ -21,7 +21,7 @@ const PROFILE = {
   email: "shahzod.bahronov05@gmail.com",
   phone: "+998 94 426 22 40",
   summary:
-    "Data analyst with a Computer Engineering background, turning raw data into clear, actionable insights with SQL and Python. Currently an AI/ML trainee at IT Park Uzbekistan, working with machine learning, NLP, and large language models. Google-certified across the full analytics workflow.",
+    "Data analyst with a Computer Engineering background, turning raw data into clear, actionable insights with SQL and Python. Currently an AI/ML trainee at IT Park Uzbekistan, working with machine learning, NLP, and large language models — including production-style multi-agent systems with RAG, evaluation, and tracing. Google-certified across the full analytics workflow.",
   socials: {
     github: "https://github.com/Shahzodo5o4",
     linkedin: "https://www.linkedin.com/in/shahzod-bahronov-812041339",
@@ -37,8 +37,8 @@ const STATS = [
 
 const SKILL_GROUPS = [
   { icon: Database, title: "Data Analysis & BI", items: ["SQL (PostgreSQL, MySQL)", "Excel", "Google Sheets", "Data Science"] },
-  { icon: Code2, title: "Programming", items: ["Python (pandas, NumPy)", "SQL"] },
-  { icon: Brain, title: "AI & Machine Learning", items: ["Machine Learning", "NLP", "Large Language Models (LLM)", "Deep Learning basics", "Claude Code"] },
+  { icon: Code2, title: "Programming", items: ["Python (pandas, NumPy)", "SQL", "FastAPI", "Git & GitHub Actions"] },
+  { icon: Brain, title: "AI & Machine Learning", items: ["Machine Learning", "NLP", "Large Language Models (LLM)", "LangGraph & multi-agent systems", "RAG (Qdrant, embeddings)", "LLM evaluation (RAGAS, LLM-as-judge)", "Langfuse tracing", "Deep Learning basics", "Claude Code"] },
   { icon: MapIcon, title: "Tools & Geospatial", items: ["QGIS", "Remote Sensing"] },
 ];
 
