@@ -5,3 +5,10 @@ dist-ssr
 .DS_Store
 .vite
 npm-debug.log*
+
+# Shaxsiy ish-qidiruv materiallari. Bu repozitoriya GitHub'da ochiq turadi, shuning
+# uchun bular faqat "hali qo'shilmagan" emas, ataylab chetlatilgan bo'lishi kerak —
+# aks holda bitta `git add -A` hammasini e'lon qiladi.
+cv/
+prep/
+jobs/
