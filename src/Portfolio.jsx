@@ -21,7 +21,7 @@ const PROFILE = {
   email: "shahzod.bahronov05@gmail.com",
   phone: "+998 94 426 22 40",
   summary:
-    "Data analyst with a Computer Engineering background, turning raw data into clear, actionable insights with SQL and Python. Currently an AI/ML trainee at IT Park Uzbekistan, working with machine learning, NLP, and large language models — including production-style multi-agent systems with RAG, evaluation, and tracing. Google-certified across the full analytics workflow.",
+    "Data analyst with a Computer Engineering background, turning raw data into clear, actionable insights — from the SQL that finds the leak through to the Power BI report that prices it. Currently an AI/ML trainee at IT Park Uzbekistan, working with machine learning, NLP, and large language models, including production-style multi-agent systems with RAG, evaluation, and tracing. Google-certified across the full analytics workflow.",
   socials: {
     github: "https://github.com/Shahzodo5o4",
     linkedin: "https://www.linkedin.com/in/shahzod-bahronov-812041339",
@@ -36,8 +36,8 @@ const STATS = [
 ];
 
 const SKILL_GROUPS = [
-  { icon: Database, title: "Data Analysis & BI", items: ["SQL (PostgreSQL, MySQL)", "Excel", "Google Sheets", "Data Science"] },
-  { icon: Code2, title: "Programming", items: ["Python (pandas, NumPy)", "SQL", "FastAPI", "Git & GitHub Actions"] },
+  { icon: Database, title: "Data Analysis & BI", items: ["SQL (PostgreSQL, MySQL)", "Window functions & CTEs", "Power BI", "Star schema modeling", "Data quality & profiling", "Statistical testing (z-test, p-value)", "Excel", "Google Sheets"] },
+  { icon: Code2, title: "Programming", items: ["Python (pandas, NumPy, SciPy)", "Jupyter", "SQL", "FastAPI", "Git & GitHub Actions"] },
   { icon: Brain, title: "AI & Machine Learning", items: ["Machine Learning", "NLP", "Large Language Models (LLM)", "LangGraph & multi-agent systems", "RAG (Qdrant, embeddings)", "LLM evaluation (RAGAS, LLM-as-judge)", "Langfuse tracing", "Deep Learning basics", "Claude Code"] },
   { icon: MapIcon, title: "Tools & Geospatial", items: ["QGIS", "Remote Sensing"] },
 ];
@@ -49,6 +49,15 @@ const LANGUAGES = [
 ];
 
 const PROJECTS = [
+  {
+    title: "UZCARD Card Payments",
+    subtitle: "Where the Money Leaks — 60,000 Transactions, Three Findings",
+    timeline: "Aug 2026",
+    description:
+      "Each of the three findings contradicts the answer the obvious GROUP BY gives. There is no student problem — there is a virtual-card-for-students problem, and the difference is a Simpson's paradox worth 16.2 mln UZS. The bank's own merchant risk label does not merely fail: inside the categories that matter it runs backwards, and the merchants it calls safest generate 4.3× the disputes of the ones it calls risky. And the entire card-not-present dispute problem lives in a five-hour window, which turns \"e-commerce is risky\" into a rule that fires once a day at 46.9% precision instead of forty times at 1.2%. Ends in a three-page Power BI report on a star schema, with both leaks priced in UZS so they can be ranked against each other. First of four analyses on one PostgreSQL database — four schemas, 1.67M rows.",
+    tech: ["PostgreSQL", "Window functions", "Python", "pandas", "Power BI", "Star schema", "Data quality"],
+    github: "https://github.com/Shahzodo5o4/data-analyst-portfolio",
+  },
   {
     title: "Multi-Agent AI Analyst",
     subtitle: "Supervisor-Led Agent Team with a Critic Loop",
