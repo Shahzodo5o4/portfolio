@@ -21,7 +21,7 @@ const PROFILE = {
   email: "shahzod.bahronov05@gmail.com",
   phone: "+998 94 426 22 40",
   summary:
-    "Data analyst with a Computer Engineering background, turning raw data into clear, actionable insights — from the SQL that finds the leak through to the Power BI report that prices it. Currently an AI/ML trainee at IT Park Uzbekistan, working with machine learning, NLP, and large language models, including production-style multi-agent systems with RAG, evaluation, and tracing. Google-certified across the full analytics workflow.",
+    "Data analyst turning raw data into clear, actionable insights — from the SQL that finds the leak through to the Power BI report that prices it. Currently an AI/ML trainee at IT Park Uzbekistan, working with machine learning, NLP, and large language models, including production-style multi-agent systems with RAG, evaluation, and tracing. Google-certified across the full analytics workflow.",
   socials: {
     github: "https://github.com/Shahzodo5o4",
     linkedin: "https://www.linkedin.com/in/shahzod-bahronov-812041339",
@@ -109,7 +109,7 @@ const TIMELINE = [
   },
   {
     kind: "experience", role: "AI/ML Trainee",
-    org: "IT Park Uzbekistan · Apprenticeship — Tashkent (On-site)", date: "Apr 2026 – Present",
+    org: "IT Park Uzbekistan · Apprenticeship — Tashkent (On-site)", date: "Apr 2026 – Aug 2026",
     points: [
       "Hands-on training in machine learning, NLP, and large language models with Python",
       "Applying data science workflows and building AI solutions using Claude Code",
