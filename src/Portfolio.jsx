@@ -98,22 +98,22 @@ const PROJECTS = [
 // Combined, date-ordered timeline of roles and study.
 const TIMELINE = [
   {
+    kind: "experience", role: "Manager - International Rankings",
+    org: "TUIT, Tashkent (On-site, Part-time)", date: "Aug 2026 – Present",
+    points: [
+      "Managing institutional participation in international and national university ranking systems",
+      "Analyzing ranking methodologies and indicators (QS, THE, etc.)",
+      "Adapting institutional data to ranking requirements and standardized formats",
+      "Preparing, reviewing, and submitting accurate data through ranking submission portals"
+    ],
+  },
+  {
     kind: "experience", role: "AI/ML Trainee",
     org: "IT Park Uzbekistan · Apprenticeship — Tashkent (On-site)", date: "Apr 2026 – Present",
     points: [
       "Hands-on training in machine learning, NLP, and large language models with Python",
       "Applying data science workflows and building AI solutions using Claude Code",
     ],
-  },
-  {
-    kind: "experience", role: "Assistant Teacher — Cisco CCNA",
-    org: "Quick Education Group NTM, Tashkent", date: "Jun 2025 – Jul 2025",
-    points: ["Taught core principles of system and network administration", "Demonstrated configuration of real-world networking devices"],
-  },
-  {
-    kind: "experience", role: "Data Science Project — Team Member",
-    org: "Tashkent University of Information Technologies", date: "Mar 2025 – May 2025",
-    points: ["Conducted data collection and research to support team decisions", "Prepared regular progress reports and reviews"],
   },
   {
     kind: "education", role: "B.Sc. in Computer Engineering",
