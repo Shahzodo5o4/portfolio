@@ -116,6 +116,11 @@ const TIMELINE = [
     ],
   },
   {
+    kind: "education", role: "M.Sc. in Geographic Information Systems and Technologies",
+    org: "Tashkent University of Information Technologies", date: "Sep 2026 – Present",
+    points: ["Geospatial data analysis, remote sensing (Sentinel-2), and GIS automation"],
+  },
+  {
     kind: "education", role: "B.Sc. in Computer Engineering",
     org: "Tashkent University of Information Technologies", date: "Sep 2022 – May 2026",
     points: ["Foundation across programming, data, and engineering"],
